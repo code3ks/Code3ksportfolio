@@ -15,6 +15,31 @@
       padding: 40px 20px;
       background: #fff;
     }
+    .print-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #0A0A0A;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+      box-shadow: 0 4px 12px rgba(10,10,10,0.3);
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+    .print-btn:hover {
+      background: #2D2D2D;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(10,10,10,0.4);
+    }
+    @media print {
+      .print-btn { display: none; }
+      body { padding: 20px; }
+    }
     h1 { font-size: 2rem; margin-bottom: 0.5rem; color: #0A0A0A; }
     h2 { 
       font-size: 1.2rem; 
@@ -43,6 +68,8 @@
   </style>
 </head>
 <body>
+  <button class="print-btn" onclick="window.print()">🖨️ Download PDF</button>
+  
   <div class="header">
     <h1>SADIQ MUHAMMED</h1>
     <p style="font-size: 1.1rem; color: #2D2D2D; margin: 0.5rem 0;">Social Media Manager • Marketing Professional • Community Builder</p>
