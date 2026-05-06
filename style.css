@@ -284,6 +284,28 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 8px 24px rgba(10,10,10,0.2);
 }
+.btn-download {
+  background: var(--white);
+  color: var(--charcoal);
+  border: 2px solid var(--gray-pale);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btn-download:hover {
+  background: var(--charcoal);
+  color: var(--white);
+  border-color: var(--charcoal);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(10,10,10,0.2);
+}
+.download-icon {
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+.btn-download:hover .download-icon {
+  transform: translateY(2px);
+}
 .btn-full { width: 100%; }
 
 /* ===== HERO IMAGE ===== */
